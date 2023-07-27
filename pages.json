@@ -1,0 +1,151 @@
+{
+	"pages": [
+	{
+		"path": "pages/grant/grant",
+		"style": {
+		
+		}
+	},
+	{
+		"path": "pages/reports/reports",
+		"style": {
+			"navigationStyle": "default",
+			"navigationBarBackgroundColor": "#02CD88",
+			"navigationBarTitleText": "记录",
+			"enablePullDownRefresh": true,
+			"onReachBottomDistance": 100
+		}
+	},{
+		"path": "pages/mine/mine",
+		"style": {
+
+		}
+	}
+	,{
+		"path": "pages/mine/editinfo/editinfo",
+		"style": {
+			
+		}
+	}
+	,{
+		"path": "pages/mine/buy/buy",
+		"style": {
+			
+		}
+	}
+	,{
+		"path": "pages/mine/ble/ble",
+		"style": {
+			
+		}
+	}
+	,{
+		"path": "pages/mine/history/history",
+		"style": {
+			"enablePullDownRefresh": false,
+			"onReachBottomDistance": 100
+		}
+	}
+	,{
+		"path": "pages/mine/history/info1",
+		"style": {
+			
+		}
+	}
+	,{
+		"path": "pages/mine/history/info2",
+		"style": {
+			
+		}
+	}
+	,{
+		"path": "pages/mine/history/info3",
+		"style": {
+			
+		}
+	}
+    ,{
+            "path" : "pages/mine/users/users",
+            "style" :                                                                                    
+            {
+                "disableScroll": true
+            }
+            
+        }
+        ,{
+            "path" : "pages/mine/users/adduser/adduser",
+            "style" :                                                                                    
+            {
+                
+                "enablePullDownRefresh": false
+            }
+            
+        }
+		,{
+		    "path" : "pages/mine/users/adduser/userInfo",
+		    "style" :                                                                                    
+		    {
+		        
+		        "enablePullDownRefresh": false
+		    }
+		    
+		}
+        ,{
+            "path" : "pages/reports/report/report",
+            "style" :                                                                                    
+            {
+                
+                "enablePullDownRefresh": false
+            }
+            
+        }
+        ,{
+            "path" : "comps/laws/laws",
+            "style" :                                                                                    
+            {
+                
+                "enablePullDownRefresh": false
+            }
+            
+        }
+    ],
+	"globalStyle": {
+		"navigationBarTextStyle": "white",
+		"navigationBarBackgroundColor": "#02CD88",
+		"backgroundColor": "#F8F8F8",
+		"app-plus": {
+			"background": "#efeff4"
+		},
+		"navigationStyle": "custom"
+	},
+	"tabBar": {
+		"color": "#999999",
+		"selectedColor": "#02CD88",
+		"list": [
+			{
+				"pagePath": "pages/reports/reports",
+				"text": "记录",
+				"iconPath": "static/tab/report.png",
+				"selectedIconPath": "static/tab/report-active.png"
+			},
+			{
+				"pagePath": "pages/mine/mine",
+				"text": "我的",
+				"iconPath": "static/tab/my.png",
+				"selectedIconPath": "static/tab/my-active.png"
+			}
+		],
+		"position": "bottom",
+		"custom": false
+	},
+	"condition" : { //模式配置，仅开发期间生效
+		"current": 0, //当前激活的模式(list 的索引项)
+		"list": [
+			{
+				"name": "", //模式名称
+				"path": "", //启动页面，必选
+				"query": "" //启动参数，在页面的onLoad函数里面得到
+			}
+		]
+	}
+}
